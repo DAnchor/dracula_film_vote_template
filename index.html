@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment One DOM Scripting</title>
+    <style>
+      @import url("css/main/main.min.css");
+    </style>
+  </head>
+  <body>
+    <div id="main" class="shadow">
+      <!-- hidden menu start -->
+      <div class="menu-hide-unhide">
+        <div class="menu">
+          <!-- generate some content here -->
+          <div id="p"><p id="banner">Following error/s have rised:</p></div>
+          <a id="button-close" href="#"><div id="close">Close</div></a>
+        </div>
+      </div>
+      <!-- hidden menu end -->
+      <div id="form-frame">
+        <form
+          id="xform"
+          action="https://webdevcit.com/displayvalues.php"
+          method="POST"
+        >
+          <fieldset>
+            <legend>Film Vote</legend>
+            <div class="column">
+              <div id="form">
+                <!-- login start -->
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" />
+                <label for="eml">Email</label>
+                <input type="text" id="email" name="email" />
+                <!-- <span id="hidden-desc-2"></span> -->
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="pwd" />
+                <!-- login end -->
+              </div>
+            </div>
+          </fieldset>
+          <h1 class="h1">Favourite versions</h1>
+          <div id="content">
+            <!-- dynamic content start -->
+            <div id="parent"></div>
+            <!-- dynamic content end -->
+          </div>
+          <div id="xdiv">
+          <button id="submit" type="submit">Vote</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="src/main.min.js"></script>
+  </body>
+</html>
